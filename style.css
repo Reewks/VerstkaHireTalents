@@ -1,0 +1,1414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'SF UI Display Regular';
+	src: url('Fonts/sf_ui_display_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('Fonts/sf_ui_display_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('Fonts/sf_ui_display_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('Fonts/sf_ui_display_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('Fonts/sf_ui_display_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('Fonts/sf_ui_display_regular.svg#sf_ui_display_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background-color: rgba(249, 248, 245, 1);
+    font-family: 'SF UI Display Regular';
+}
+
+.header {
+    width: 100%;
+    max-height: 596px;
+    position: relative;
+    padding: 2rem 1rem;
+}
+.HT{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    order: 1;
+}
+.logo-text{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    order: 2;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:rgba(98, 91, 91, 1);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    order: 3;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(249, 248, 245, 1);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    border: 1px solid rgba(217, 213, 202, 1);
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    min-width: 120px;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    background: transparent;
+    color: rgba(98, 91, 91, 1);
+    font-weight: 500;
+    background: rgba(249, 248, 245, 1);
+    border: none;
+}
+
+.create-account-btn {
+    border: 1px solid rgba(98, 91, 91, 1);
+    background: rgba(249, 248, 245, 1);
+    color: rgba(98, 91, 91, 1);
+}
+
+.headerinf {
+    width: 100%;
+    max-width: 824px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.Get_The_Perfect {
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-family: 'SF UI Display Regular';
+    font-weight: 700;
+}
+
+.Hire_pre-vetted {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: #625B5B;
+    margin: 0 auto 2rem;
+    max-width: 651px;
+}
+
+.CTA_Button {
+    background: #000;
+    padding: 1rem 2rem;
+    border-radius: 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topfreelancers {
+    
+    max-width: 1600px;
+    margin-bottom: 130px;
+    
+
+}
+.pattern{
+    position: absolute;
+    padding-top: 235px;
+    
+}
+.star{
+    max-width: 17px;
+    max-height: 16px;
+}
+
+.freelancer-card {
+    position: relative;
+    width: 376px;
+    height: 501px;
+    
+    
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.background {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 312px;
+    height: 271px;
+    z-index: 2; 
+}
+
+.profile-img {
+    position: absolute;
+    top: 21px;
+    left: 72px;
+    width: 249px;
+    height: 396px;
+    object-fit: cover;
+    clip-path: inset(0 0 114px 0);
+    z-index: 3; 
+}
+
+.card-content {
+    max-width: 312px;
+    max-height: 154px;
+   position: relative;
+    
+    padding-left: 36px;
+    padding-top: 325px;
+    padding-bottom: 22px;
+    z-index: 2; 
+}
+.rating{
+    max-width: 40px;
+    max-height: 28px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.NR{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.name{
+    max-width: 177px;
+    max-height: 26px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.position{
+    margin-bottom: 24px;
+}
+
+.profile-btn{
+    width: 103px;
+    height: 36px;
+    padding-left: 42px; 
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: white;
+}
+.hire-btn{
+    width: 113px;
+    height: 36px;
+    background: #000;
+    
+    padding-left: 42px; 
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.IMAGES_Profile{
+    height: 20px;
+    width: 20px;
+    margin-left: -83px;
+    
+}
+.IMAGES_Mail{
+    height: 20px;
+    width: 20px;
+    margin-left: -90px;
+}
+.buttons{
+    gap: 1rem;
+}
+.freelancer-card-Muntasir{
+    position: relative;
+    width: 376px;
+    height: 431px;
+    top: 70px;
+    margin-left: 32px;
+
+}
+.profile-img-M{
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    width: 362px;
+    height: 242px;
+    object-fit: cover;
+    clip-path: inset(0 0 54px 0);
+    z-index: 3;
+}
+.profile-img-Tanvir{
+    position: absolute;
+    top: 39px;
+    left: 72px;
+    width: 222px;
+    height: 225px;
+    object-fit: cover;
+    clip-path: inset(0 0 32px 0);
+    z-index: 3;
+}
+.profile-img-Tarik{
+    position: absolute;
+    top: 50px;
+    left: 78px;
+    width: 221px;
+    height: 253px;
+    object-fit: cover;
+    clip-path: inset(0 0 0px 0);
+    z-index: 3;}
+.background-M{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 312px;
+    height: 201px;
+    z-index: 2;
+}
+.card-content-M{
+    max-width: 312px;
+    max-height: 154px;
+   position: relative;
+   
+    padding-left: 36px;
+    padding-top: 250px;
+    padding-bottom: 22px;
+    z-index: 2;
+}
+.freelancer-card-Tarik{
+    position: relative;
+    width: 376px;
+    height: 501px;
+    margin-left: 32px;
+}
+
+.freelancer-card-Tanvir{
+    position: relative;
+    width: 376px;
+    height: 431px;
+    top:70px;
+    margin-left: 32px;
+
+}
+.freelancer{
+    display: flex;
+    
+    padding: 0px;
+    min-width: fit-content;
+}
+
+
+.trusted-companies {
+    padding: 4rem 1rem;
+    background: rgba(249, 248, 245, 1);
+}
+
+.companies-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1396px;
+    margin-left: 102px;
+}
+
+.company-logo {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+
+
+.categories {
+    overflow-x: auto;
+    background: #rgba(249, 248, 245, 1);
+    max-height: 1030px;
+    margin-bottom: 100px;
+}
+
+.categories-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 3rem;
+    color: #050A14;
+    margin-top: 130px;
+    margin-bottom: 60px;
+    font-family: 'SF UI Display Regular';
+    font-weight: 600;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+.categories-grid-down{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.category-card {
+    flex: 0 0 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    margin-left: 100px;
+    max-height: 285px;
+    
+}
+.category-card-Webflow{
+
+    max-width: 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    
+    max-height: 285px;
+}
+.category-card-Brand{
+    max-width: 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-height: 285px;
+}
+
+ .category-card-Web{
+    flex: 0 0 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+   
+    margin-left: 100px;
+    top: 309px;
+}
+
+.category-card-App{
+    max-width: 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+}
+
+.category-card-Ios{
+    max-width: 451px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+
+} 
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.category-name {
+    font-size: 1.5rem;
+    color: #050A14;
+    margin-bottom: 1rem;
+}
+
+.category-description {
+    color: #696969;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1E1515;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link-arrow {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+.data-analysis {
+    padding: 8rem 1rem;
+    background: #rgba(249, 248, 245, 1);
+}
+
+.analysis-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.analysis-content {
+    order: 1;
+    text-align: center;
+}
+
+.analysis-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.analysis-subtitle {
+    color: #625B5B;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.chart-wrapper {
+    order: 2;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.analysis-chart {
+    width: 100%;
+    height: auto;
+    max-width: 810px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.direct-hire {
+    padding: 8rem 6rem;
+    background: rgba(249, 248, 245, 1);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 552px;
+    margin-left: 26.75rem;
+    
+}
+
+.section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+.section-header p {
+    color: #625B5B;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.talents-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.talent-card {
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    font-size: 1.25rem;
+    margin-top: 0.7rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rating-DH {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 500;
+    max-width: 2.5rem;
+    max-height: 2rem;
+    
+}
+.NAME{
+    max-width: 12rem;
+}
+.direction-DH{
+    max-width: 16rem;
+    color:#625B5B; 
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+.cta-section-BUTTONS{
+    display: flex;
+   
+    
+    align-items: center;
+    max-width: 19.5rem;
+    max-height: 2.5rem;
+}
+.rate{
+    margin-left: 15px;
+    height:26px;
+    width: 50px;
+}
+.buttons-DH {
+    display: flex;
+    gap: 1rem;
+    width: 212px;
+    margin-left: 2rem;
+}
+
+.btn-profile, .btn-hire {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #625B5B;
+    background: transparent;
+    max-width: 94px;
+    max-height: 36px;
+}
+
+.btn-hire {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+    max-width: 105px;
+    display: flex;
+    justify-content: center;
+}
+.HireMeDH{
+    height: 20px;
+    width: 48px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.browse-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 32px;
+    border: none;
+}
+.talent-card-Tarik{
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+    
+}
+.talent-card-M{
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+    
+}
+.talents-grid-down{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+    
+}
+.talent-card-H{
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+    
+}
+.talent-card-A{
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+}
+.talent-card-S{
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(217, 213, 202, 1);
+    max-width: 451px;
+    max-height: 188px;
+}
+
+.reviews-section {
+    margin-top: 130px;
+    background: #rgba(249, 248, 245, 1);
+    margin-bottom: 130px;
+}
+.WEER{
+    display: flex;
+}
+.reviews-container {
+    max-width: 1600px;
+    margin: 0 100px;
+    display: flex;
+}
+
+.section-title-2000 {
+    text-align:start;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #050A14;
+    margin-left: 100px;
+    height: 116px;
+    width: 495px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 370px auto 370px;
+    gap: 2rem;
+}
+
+.review-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(249, 248, 245, 1);
+    border: 1px solid rgba(217, 213, 202, 1);
+    width: 612px;
+    height: 276px;
+    
+}
+.review-card-1 {
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(249, 248, 245, 1);
+    border: 1px solid rgba(217, 213, 202, 1);
+    height: 276px;
+    width: 370px;
+    
+}
+
+.review-header {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.review-name {
+    font-size: 1.5rem;
+    color: #050A14;
+    margin-bottom: 0.25rem;
+    margin-left: 1rem;
+    width: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.TWO-Arrow{
+    width: 60px;
+    height: 60px;
+     background: rgba(249, 248, 245, 1);
+    border: none;
+    margin-left: 728px;
+    margin-top: 60px;
+}
+.w1w{
+    background-color: #f8f9fa;
+    border: none;
+}
+.TWO-Arrow-1{
+    width: 60px;
+    height: 60px;
+    background: rgba(249, 248, 245, 1);
+    border: none;
+    margin-left: 1.5rem;}
+
+.link2000{
+    height: 32px;
+    width: 32px;
+    margin-left: 311px;
+
+}
+.img_two_arrow{
+    height: 60px;
+    width: 60px;
+}
+.link2000-1{
+    height: 32px;
+    width: 32px;
+    margin-left: 61px;
+}
+
+.review-location {
+    color: #625B5B;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    
+}
+
+.review-stars {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.review-text {
+    color: #696969;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-wrap: wrap;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-author {
+    color: #625B5B;
+    font-size: 0.9rem;
+}
+
+.review-date {
+    color: #625B5B;
+    font-size: 0.9rem;
+}
+.browse-btn-RMR{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 32px;
+    border: none;
+    margin-left: 642px;
+    height: 60px;
+    margin-top: 56px;
+}
+.avatar-2000{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.blog-section {
+    padding: 130px 8px;
+    background: #rgba(249, 248, 245, 1);
+}
+
+.blog-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: start;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.browse-btn-Blog{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    border-radius: 32px;
+    border: none;
+    margin-left: 647px;
+    height: 60px;
+    
+   
+}
+.Blog-title{
+    text-align:start;
+    font-size: 2.5rem;
+    color: #050A14;
+    height: 116px;
+    width: 495px;
+    font-size: 48px;
+    font-weight: 600
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #625B5B;
+    margin-bottom: 3rem;
+    height: 28px;
+    width: 162px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.blog-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img_Blog {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-content-Blog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);
+    color: white;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    color: white;
+    
+    min-height: 70px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 8px 0;
+    cursor: pointer;
+    margin-left: 127px;
+    border-radius: 20px;
+    border: 1px solid #625B5B;
+    background:white;
+    max-width: 150px;
+    max-height: 36px;
+    padding: 8px 6px 8px 24px;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.cta-section {
+    background: #f8f9fa;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    height: 540px;
+}
+
+.cta-container {
+    max-width: 1600px;
+    padding-top: 130px;
+}
+
+.cta-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: #625B5B;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-primary, .cta-secondary {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+    display: flex;
+    gap: 1.5rem;
+    max-height: 60px;
+}
+
+.cta-primary {
+    background: white;
+    color: black;
+    border: 2px solid #000;
+}
+.humalup{
+    text-align: start;
+    position: absolute;
+    right: 1465px;
+    top: 405px;
+    
+}
+.human{
+    text-align: start;
+    position: absolute;
+    right: 1228px;
+    top: 142px;
+}
+.RotationVector{
+    transform: rotate(315deg);
+    height: 128px;
+    width: 128px;
+    text-align: start;
+    position: absolute;
+    left: 1468px;
+    top: 409px;
+}
+.cta-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.cta-secondary:hover {
+    background: #000;
+    color: #fff;
+}
+.arrow_CTA{
+    height: 28px;
+    width: 28px;
+    
+}
+.txt_StarHiring{
+    height: 28px;
+
+}
+.arrow{
+    height: 28px;
+}
+
+.footer {
+    background: #rgba(249, 248, 245, 1);
+    padding: 4rem 0rem 2rem;
+    color: #050A14;
+}
+
+.footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 190px 126px 100px 137px 92px;
+    gap: 11.25rem;
+    margin-bottom: 3rem;
+    padding-left: 6.25rem;
+}
+
+.footer-section {
+    margin-bottom: 2rem;
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    
+    font-weight: 500;
+}
+
+.footer-text, .footer-list li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    color: #625B5B;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+.footer-list li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.footer-list li:hover {
+    color: #007bff;
+}
+.footer-bottom {
+    width: 1600px;
+    border-top: 1px solid #ddd;
+    padding-top: 2rem;
+    display: flex;
+    gap: 672px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    padding-left: 6.25rem;
+}
+.footer-links a {
+    color: #625B5B;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #007bff;
+}
+.copyright {
+    font-size: 0.9rem;
+    color: #625B5B;
+    margin-top: 10px;
+    
+}
+.FooterEnd{
+    margin-top: 10px;
+    
+}
+.FooterLogo{
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 24px;
+}
+@media (max-width: 480px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-left: 0;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-links {
+        padding: 0;
+        gap: 0.5rem;
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+    .logo-img{
+        height: 40px;
+        width: 40px;
+    }
+    .FooterLogo {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .freelancer-card-Muntasir{
+        margin-bottom: 150px;
+    }
+    .search-wrapper {
+        display: none;
+    }   
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        border: 1px solid rgba(98, 91, 91, 1);
+    }
+    .companies-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-left: 0px;
+    }
+    .trusted-companies {
+        padding: 2rem 1rem;
+    }
+    .company-logo {
+        max-width: 120px;
+        margin: 0 auto;
+    }
+    .categories {
+        padding: 2rem 1rem;
+        margin-bottom: 0;
+    }
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        gap: 1rem;
+    }
+    .category-card {
+        padding: 2rem;
+        flex: 0px;
+        margin-left: 0px;
+    }
+    .category-card-Web{
+        margin-left: 0px;
+    }
+
+    .category-name {
+        font-size: 1.25rem;
+    }
+    .category-description {
+        display: none;
+    }
+    .analysis-container{
+        flex-direction: column;
+    }
+    .analysis-content {
+        flex: 1;
+        max-width: 500px;
+    }
+    
+    .analysis-subtitle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .cta-button {
+        justify-content: center;
+    }
+    .direct-hire{
+        padding: 50px 0px;
+    }
+    .talents-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile-info {
+        justify-content: space-around;
+    }
+    .talent-card, .talent-card-H, .talent-card-A, .talent-card-M, .talent-card-S, .talent-card-Tarik{
+        border: none;
+        padding: 2rem 1rem;
+    }
+    .btn-profile, .btn-hire {
+        justify-content: center;
+    }
+    .section-header {
+        margin: 0;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .review-card {
+        padding: 1.5rem;
+        max-width: 370px;
+        height: auto;
+    }
+    .reviews-container {
+        margin: 0;
+        display: grid;
+    }
+    .link2000{
+        margin-left: 80px;
+    }
+    .review-card-1{
+        height: auto;
+    }
+    .section-title-2000 {
+        font-size: 32px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .browse-btn-RMR {
+        margin-left: 75px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
+    }
+    .reviews-section {
+        margin-bottom: 30px;
+    }
+    .WEER{
+        display: block;
+    }
+    .TWO-Arrow {
+        margin-left: 120px;
+    }
+    .browse-btn-Blog {
+        margin-left: 75px;
+    }
+    .Blog-title {
+        font-size: 32px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .blog-section {
+        padding: 70px 8px;
+    }
+    .read-more {
+        margin-left: 107px;
+    }
+    .review-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .blog-title {
+        font-size: 1.2rem;
+    }
+    .blog-card {
+        padding: 1.5rem;
+    }
+    .cta-section {
+        padding: 4rem 1rem;
+    }
+    .cta-container {
+        padding-top: 0;
+    }
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+    .human, .humalup, .RotationVector{
+        display: none;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .Get_The_Perfect {
+        font-size: 32px;
+    }
+    .Hire_pre-vetted {
+        display: none;
+    }
+    .freelancer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .freelancer-card-Muntasir, .freelancer-card-Tanvir, .freelancer-card-Tarik{
+        margin-left: 0;
+    }
+    .categories-title {
+        margin-top: 30px;
+    }
+    .footer-bottom {
+        width: 100%;
+        display: block;
+    }
+}
