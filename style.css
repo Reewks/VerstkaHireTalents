@@ -142,7 +142,7 @@
 }
 
 .topfreelancers {
-    
+    justify-content: center;
     max-width: 100%;
     margin-bottom: 130px;
     
@@ -350,6 +350,7 @@
 
 
 .trusted-companies {
+    justify-content: center;
     width: 100%;
     padding: 4rem 1rem;
     background: rgba(249, 248, 245, 1);
