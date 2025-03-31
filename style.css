@@ -142,6 +142,7 @@
 }
 
 .topfreelancers {
+    display: flex;
     justify-content: center;
     max-width: 100%;
     margin-bottom: 130px;
@@ -350,6 +351,7 @@
 
 
 .trusted-companies {
+    display: flex;
     justify-content: center;
     width: 100%;
     padding: 4rem 1rem;
